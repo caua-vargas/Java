@@ -5,20 +5,29 @@ import java.util.Scanner;
 public class AtividadeVetor2 {
     public static void main(String[] args) {
         Scanner ler = new Scanner(System.in);
-        int contVet=0;
-        int vetor1[] = new int [contVet];
-        int vetor2[] = new int [contVet];
-        int vetor3[] = new int [contVet];
-        System.out.println("defina o tamanho do primeiro vetor: ");
-        int contVet = ler.nextInt();
+        int contVet ;
         
-        System.out.println("defina o tamanho do segundo vetor: ");
-        int contVet2 = ler.nextInt();
+        System.out.println("defina o tamanho do vetor (no maximo 10): ");
+        contVet = ler.nextInt();
         
-        for (int i = 0; i < vetor1.length; i++) {
-            System.out.println("Defina o valor dentro do indice ["+i+"]");
-            vetor1[i]
+        int vetorA[] = new int [contVet];
+        int vetorB[] = new int [contVet];
+        int vetorSoma[] = new int [contVet];
+        
+        for (int i = 0; i < vetorA.length; i++) {
+            System.out.println("defina os valores para cada elemento do vetor A:");
+            vetorA[i] = ler.nextInt();
+            
         }
+        for (int i = 0; i < vetorB.length; i++) {
+            System.out.println("defina os valores para cada elemento dovetor B:");
+            vetorB[i] = ler.nextInt();
+        }
+        for (int i = 0; i < vetorSoma.length; i++) {
+            System.out.println("defina os valores para cada elemento:");
+            vetorSoma[i] = vetorA[i] + vetorB[i];
+            System.out.println(vetorA[i]+"+"+vetorB[i]+"="+vetorSoma[i]);
         
+        }
     }
 }
